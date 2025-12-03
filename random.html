@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Random Redirect</title>
+<script>
+    // 四个问卷的链接
+    const links = [
+        "https://v.wjx.cn/vm/wDOMO7Y.aspx",
+        "https://v.wjx.cn/vm/wePLoMb.aspx",
+        "https://v.wjx.cn/vm/rbckAkK.aspx",
+        "https://v.wjx.cn/vm/OtgRkNf.aspx"
+    ];
+
+    // 随机跳转
+    window.onload = function() {
+        const url = links[Math.floor(Math.random() * links.length)];
+        window.location.href = url;
+    }
+</script>
+</head>
+<body>
+<p>正在随机分配问卷，请稍候...</p>
+</body>
+</html>
