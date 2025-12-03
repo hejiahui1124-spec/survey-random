@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>问卷随机分配中...</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background: #f7f7f7;
+      color: #333;
+    }
+    .box {
+      display: inline-block;
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  正在为您分配问卷，请稍候...
+  <br><br>
+  Loading...
+</div>
+
+<script>
+  // 四个问卷链接
+  const links = [
+    "https://v.wjx.cn/vm/wDOMO7Y.aspx",
+    "https://v.wjx.cn/vm/wePLoMb.aspx",
+    "https://v.wjx.cn/vm/rbckAkK.aspx",
+    "https://v.wjx.cn/vm/OtgRkNf.aspx"
+  ];
+
+  // 随机跳转
+  setTimeout(() => {
+    const url = links[Math.floor(Math.random() * links.length)];
+    window.location.href = url;
+  }, 1000); // 1秒后自动跳转，可自行调整
+</script>
+
+</body>
+</html>
